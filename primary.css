@@ -1,4 +1,4 @@
-:root{
+*{
     font-family: 'Roboto', sans-serif;
     font-size: 20px ;
     color: #003;
@@ -110,7 +110,7 @@ h2.header2{
 #cwnlogo{
     width:3rem;
 }
-#tribute-link{
+.tribute-link{
     text-align: center;
 }
 .heading2{
