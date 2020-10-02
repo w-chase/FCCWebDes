@@ -3,11 +3,17 @@
     font-size: 20px ;
     color: #003;
 }
+a{
+    cursor: pointer;
+}
+
 @font-face {
     font-family: starwars;
     src: url(Starjedi.ttf)
 }
 /*Starwars font provided by https://www.starwarsfont.com/fonts/star_jedi */
+
+
 body{
     background-image: url(Sand\ Planet\ -\ 1920x1080.png);
     background-size: cover;
@@ -70,7 +76,7 @@ body{
     margin: 0.5rem;
     padding: 0.5rem;
 }
-#info-content{
+.info-content{
     text-align:justify;
     margin:0.5rem;
 }
