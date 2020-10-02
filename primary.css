@@ -20,24 +20,30 @@ body{
     "side main"
     "footer footer";
 }
-#title{
-    font-family: 'starwars', sans-serif;
-    font-size: 5rem;
-    text-align: center;
-}
 #image{
     max-width: 100%;
     display: block;
+}
+.caption{
+    text-align: center;
 }
 #img-div{
     display: block;
     justify-self: center;
 }
-figcaption{
-    font-size: 1.5rem;
+
+#battle-regalia{
+    display: block;
+}
+#header{
+    grid-area: header;
+    border-bottom: 2px solid lightslategray
+}
+#title{
+    font-family: 'starwars', sans-serif;
+    font-size: 5rem;
     text-align: center;
 }
-
 #main{
     display: grid;
     grid-area: main;
@@ -64,9 +70,6 @@ figcaption{
     margin: 0.5rem;
     padding: 0.5rem;
 }
-h2.header2{
-    font-size:1.25rem;
-}
 #info-content{
     text-align:justify;
     margin:0.5rem;
@@ -77,31 +80,16 @@ h2.header2{
     width: auto;
     margin: 0.5rem;
 }
-#battle-regalia{
-    display: block;
-}
-#header{
-    grid-area: header;
-    border-bottom: 2px solid lightslategray
-}
+
+
+
 #side{
     grid-area:side;
 
 }
-#footer{
-    grid-area:footer;
-    margin:1rem;
-    border:lightslategray solid 1px;
-}
-#ccp-copyright{
-    text-align: justify;
-    margin:1rem;
-    font-size:.6rem;
-}
 #zkill{
     width: 3rem;
     text-align:center;
-
 }
 #details{
     width: 3rem;
@@ -113,17 +101,36 @@ h2.header2{
 .tribute-link{
     text-align: center;
 }
-.heading2{
-    text-align: center;
-}
-.heading3{
-    text-align: center;
-}
 .bioinfo{
     display: grid;
     justify-self: center;
     
 }
+
+
+#footer{
+    grid-area:footer;
+    margin:1rem;
+    border:lightslategray solid 1px;
+}
+#ccp-copyright{
+    text-align: justify;
+    margin:1rem;
+    font-size:.6rem;
+}
+.footer-link{
+    font-size: inherit;
+}
+
+
+.heading2{
+    text-align: center;
+    font-size:1.25rem;
+}
+.heading3{
+    text-align: center;
+}
+
 
 @media only screen and (max-width:1024px) {
     body{
@@ -153,6 +160,8 @@ h2.header2{
         display: initial;
     }
 }
+
+
 @media only screen and (max-width: 922px){
     #full-portrait{
         display: none;
@@ -175,6 +184,8 @@ h2.header2{
         grid-template-rows: 0.5fr auto .5fr;
     }
 }
+
+
 @media only screen and (max-width:550px){
     #side{
         display: grid;
